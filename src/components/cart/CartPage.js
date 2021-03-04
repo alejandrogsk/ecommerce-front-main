@@ -116,7 +116,7 @@ const CartPage = () => {
             //If i'm not logged i can't buy
             if(!!uid === false) {
                 return Swal.fire({
-                    title: 'Debes Iniciar Sesión',
+                    title: 'You must log in',
                     icon: 'warning',
                     confirmButtonText: 'OK'
                   }).then(() => {    
