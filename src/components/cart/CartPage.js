@@ -205,7 +205,7 @@ const CartPage = () => {
                                         <Typography className={classes.price}>${result}</Typography>
 
                                         {/*Stripe */}
-                                        <Elements stripe={stripePromise}>
+                                        <Elements options={{locale: "en"}} stripe={stripePromise}>
                                             <CheckoutForm result={result} />
                                         </Elements>
                                         {/*Stripe */}
