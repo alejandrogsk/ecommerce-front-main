@@ -36,25 +36,33 @@ const useStyles = makeStyles((theme) => ({
     width: "10rem"
   },
   contentBox: {
-    alignItems: "start", 
+    alignItems: "center", 
     display: "flex", 
-    flexDirection: "column", 
+    justifyContent: "space-around",
     marginLeft: ".3rem",
     position: "relative", 
     width: "100%",
+    [theme.breakpoints.down('sm')]: {
+      alignItems: "start",
+      flexDirection: "column",
+      justifyContent: "start"
+    },
   },
   title: {
     color: theme.palette.primary.main,
     fontSize: "1.2rem",
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('xs')]: {
       fontSize: ".9rem"
     },
   },
   texts: {
     color: "#616161",
-    marginTop: ".5rem",
     [theme.breakpoints.down('sm')]: {
-      fontSize: ".8rem"
+      marginTop: ".5rem",
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: ".8rem",
+      
     },
   },
   buttons: {
