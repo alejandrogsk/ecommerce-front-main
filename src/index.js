@@ -7,7 +7,7 @@ import {customeTheme} from './components/ui/theme';
 import AppRoutes from './routes/AppRoutes';
 
 import { PersistGate } from 'redux-persist/integration/react'
-import  {store, persistor}  from './store/store';
+import  {store, persistor}  from './redux/store/store';
 
 ReactDOM.render(
 

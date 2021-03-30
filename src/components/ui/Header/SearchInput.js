@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
+//Redux
+import { useHistory } from 'react-router-dom';
+//Material UI
 import { makeStyles } from '@material-ui/core/styles';
 import {Box, InputBase, Popover } from "@material-ui/core";
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
-import { useHistory } from 'react-router-dom';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -87,7 +90,7 @@ export default function SearchInput() {
             <form className={classes.form} onSubmit={(e) => handleSubmit(e)}>
             <InputBase
                 className={classes.input}
-                placeholder="Search Google Maps"
+                placeholder="Search Product"
                 inputProps={{ "aria-label": "search google maps" }}
                 onChange={(e) => handleInputChange(e)}
             />

@@ -1,13 +1,16 @@
 import React from 'react';
-import { Avatar, Button, CssBaseline, TextField, Link, Grid, Box, Typography, Container  } from '@material-ui/core';
-
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import { makeStyles } from '@material-ui/core/styles';
-import {useForm} from "../../hooks/useForm";
-import { startRegister } from '../../actions/auth';
+//Redux
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-
+//Material UI
+import { Avatar, Button, CssBaseline, TextField, Link, Grid, Box, Typography, Container  } from '@material-ui/core';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import { makeStyles } from '@material-ui/core/styles';
+//Custom
+import {useForm} from "../../hooks/useForm";
+//Action
+import { startRegister } from '../../redux/actions/auth';
+//Swal
 import Swal from 'sweetalert2'
 
 function Copyright() {

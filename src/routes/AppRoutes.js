@@ -8,14 +8,14 @@ import { BrowserRouter as Router, Switch, Redirect } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 //Redux actions
-import { startChecking } from "../actions/auth";
+import { startChecking } from "../redux/actions/auth";
 
 //Material ui
 import {Grid, Box, CircularProgress} from "@material-ui/core";
 
 //Routes
 import { PublicRoute } from "./PublicRoutes";
-import { PrivateRoute } from "./PrivateRoutes";
+//import { PrivateRoute } from "./PrivateRoutes";
 
 //Components
 import  Home  from "../components/home/Home";

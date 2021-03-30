@@ -1,16 +1,20 @@
 import React from 'react'
+//Redux
+import { useDispatch, useSelector } from 'react-redux';
+//Router
+import { Link } from 'react-router-dom';
+//Material UI
 import {Grid, makeStyles, Paper, Box, Typography, Button} from '@material-ui/core';
 import ArrowRightOutlinedIcon from '@material-ui/icons/ArrowRightOutlined';
-
 import LanguageOutlinedIcon from '@material-ui/icons/LanguageOutlined';
 import LocalShippingOutlinedIcon from '@material-ui/icons/LocalShippingOutlined';
 import VerifiedUserOutlinedIcon from '@material-ui/icons/VerifiedUserOutlined';
-import { Link, useHistory } from 'react-router-dom';
 
-/*la parte de reudx */
-import { useDispatch, useSelector } from 'react-redux';
-import {addProduct, addQuantity} from "../../actions/cart";
-/*----------*/
+
+
+//Actions
+import {addProduct, addQuantity} from "../../redux/actions/cart";
+
 
 const useStyles = makeStyles((theme) => ({
     containerClass: {

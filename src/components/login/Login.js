@@ -1,11 +1,18 @@
 import React from 'react';
+//Custom Hook
+import { useForm } from '../../hooks/useForm';
+//Redux
+import { useDispatch, useSelector } from 'react-redux';
+//Router
+import { useHistory } from 'react-router-dom';
+//Material UI
 import { Avatar, Button, CssBaseline, TextField, Link, Grid, Box, Typography, Container  } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import { useForm } from '../../hooks/useForm';
-import { useDispatch, useSelector } from 'react-redux';
-import { startLogin } from '../../actions/auth';
-import { useHistory } from 'react-router-dom';
+//Actions
+import { startLogin } from '../../redux/actions/auth';
+
+
 
 function Copyright() {
   return (

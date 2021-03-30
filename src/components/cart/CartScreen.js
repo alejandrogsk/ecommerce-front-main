@@ -1,7 +1,9 @@
 import React from 'react'
+//Redux
 import { useDispatch } from 'react-redux';
-import { removeProduct, addQuantity, removeQuantity } from '../../actions/cart';
-
+//Actions
+import { removeProduct, addQuantity, removeQuantity } from '../../redux/actions/cart';
+//Material UI
 import { makeStyles } from '@material-ui/core/styles';
 import {Grid, Paper, Box, Typography,  CardMedia} from '@material-ui/core';
 import AddCircleOutlineOutlinedIcon from '@material-ui/icons/AddCircleOutlineOutlined';

@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 
 //Action
-import { restartProducts } from "../../actions/cart";
+import { restartProducts } from "../../redux/actions/cart";
 
 //My Component
 import { CartScreen } from './CartScreen'

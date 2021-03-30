@@ -27,7 +27,7 @@ import BackToTopBtn from "../BackToTopBtn";
 
 // redux 
 import { useSelector, useDispatch } from "react-redux";
-import { startLogout } from "../../../actions/auth"
+import { startLogout } from "../../../redux/actions/auth"
 
 //Search Input Component
 import SearchInput from "./SearchInput"
